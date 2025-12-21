@@ -18,6 +18,7 @@ class Menu(models.Model):
     price = models.DecimalField(max_digits=8, decimal_places=2)
     is_available = models.BooleanField(default=True)
 
+
     def __str__(self):
         return self.item_name
 
