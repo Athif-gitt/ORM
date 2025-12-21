@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'myapp',
     'myapp2',
     'reviewapp',
+    'metaapp',
 ]
 
 MIDDLEWARE = [
