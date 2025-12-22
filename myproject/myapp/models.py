@@ -14,10 +14,12 @@ class Course(models.Model):
     def __str__(self):
         return self.title
     
+    
 class Enrollment(models.Model):
     student = models.ForeignKey(Student, on_delete=models.CASCADE, related_name='enrollments')
     course = models.ForeignKey(Course, on_delete=models.CASCADE, related_name='course')
     enrolled_at = models.DateTimeField(auto_now_add=True)
+
 
     def __str__(self):
         return f"{self.student} => {self.course}"
