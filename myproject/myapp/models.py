@@ -57,6 +57,7 @@ class Menu(models.Model):
 
 # Menu.objects.select_related()
 
+
 # items = Menu.objects.select_related('hotel').filter(city='Kozhikode')
 # for item in items:
 #     print(item.hotel.city, item.item_name)
